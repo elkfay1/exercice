@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidéothèque</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script defer src="../js/app.js"></script>
+</head>
+
+<body>
+
+    <head>
+        <nav>
+            <ul>
+                <li><a href="../html/index.html">Accueil</a></li>
+                <li><a href="../html/videoteque.html">La Vidéothèque</a></li>
+                <li><a href="../html/recherche_film.html">Recherche ton film</a></li>
+            </ul>
+        </nav>
+    </head>
+    <main>
+        <section>
+            <h1>Notre Vidéothèque</h1>
+        </section>
+
+        <section>
+            <article>
+                <button id="addMovieBtn">Ajouter un film</button>
+                <select id="filterSelect">
+                    <option value="title">Titre</option>
+                    <option value="year">Année</option>
+                </select>
+            </article>
+            <form id="addMovieForm" style="display: none;">
+                <label for="title">Titre:</label>
+                <input type="text" id="title" name="title" required minlength="2">
+                <label for="year">Année:</label>
+                <input type="number" id="year" name="year" required min="1900" max="2023">
+                <label for="author">Auteur:</label>
+                <input type="text" id="author" name="author" required minlength="5">
+                <button type="submit">Sauvegarder</button>
+            </form>
+            <table id="moviesTable">
+                <thead>
+                    <tr>
+                        <th>le Titre</th>
+                        <th>l'Année</th>
+                        <th>l'Auteur</th>
+                        <th>choix</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+</body>
+
+</html>
